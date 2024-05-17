@@ -57,6 +57,8 @@ li{
     height: 30px;
     width: 30px;
   }
+
+  
   .dragdrop {
     position: absolute;
     bottom: 20px;
@@ -74,7 +76,7 @@ li{
     position: relative;
     display: flex;
   }
-  .todo-input button{
+  /* .todo-input button{
     border: 1px solid hsl(234, 11%, 52%);
     outline: none;
     background:none;
@@ -84,7 +86,7 @@ li{
     position: absolute;
     align-self: center;
     margin-left: 15px;
-  }
+  } */
   .todo-input input{
       width: 100%;
       background-color: hsl(235, 24%, 19%);
@@ -96,6 +98,31 @@ li{
       border-radius: 8px;
       font-family: "Josefin Sans", sans-serif;
   }
+
+
+  .todo-input button {
+    border: 1px solid hsl(234, 11%, 52%);
+    outline: none;
+    background: hsl(235, 24%, 19%);
+    color: hsl(233, 11%, 84%);
+    height: 50px;
+    width: 80px;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .todo-input button:hover {
+    background: hsl(234, 11%, 52%);
+    color: hsl(235, 24%, 19%);
+  }
+  
+  
+
+
   .todo-input input::placeholder{
       color: hsl(234, 11%, 52%);
   }
@@ -217,7 +244,7 @@ li{
   body.light .clear:hover{
     color:hsl(235, 19%, 35%);
   }
-  .mob{
+  .status{
     display: none;
   }
   @media(max-width:600px){
